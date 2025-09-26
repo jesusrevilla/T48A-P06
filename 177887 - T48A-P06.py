@@ -2,14 +2,11 @@
 
 import pandas as pd
 
-from google.colab import drive
-drive.mount('/content/drive')
-
 #Importar datos de archivo CSV
-student_df = pd.read_csv("/content/drive/MyDrive/P06 - Minería/STUDENT_GROUP.csv")
+student_df = pd.read_csv("STUDENT_GROUP.csv")
 student_df.head()
 
-attendance_df = pd.read_csv("/content/drive/MyDrive/P06 - Minería/attendance.csv")
+attendance_df = pd.read_csv("attendance.csv")
 attendance_df.head()
 
 student_df.dtypes
